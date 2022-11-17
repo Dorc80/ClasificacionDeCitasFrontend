@@ -1,0 +1,24 @@
+<div class="quotes-add-page">
+    
+    <div><h1>Quote Ranks</h1></div>
+
+    <div><a [routerLink]="['/']">Home</a></div>
+
+    <div class="purple">Provide a quote by {{author.name}}</div>
+    
+    <div *ngIf="errorMsg" class="red">
+        {{errorMsg}}
+    </div>
+
+    <div class="add-form">
+
+            <label for="name">Name:</label>
+            <input type="text" [(ngModel)]="quote" >
+
+            <div class="buttons">
+                <button [routerLink]="['/']">Cancel</button><button (click)="clickSubmit()">Submit</button>
+            </div>
+
+    </div>
+
+</div>

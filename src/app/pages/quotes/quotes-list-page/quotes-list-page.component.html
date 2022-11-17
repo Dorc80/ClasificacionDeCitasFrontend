@@ -1,0 +1,37 @@
+<main class="quotes-list-page">
+
+    <div>
+        <header>
+            <h1>Quote Ranks</h1>
+        </header>
+
+        <div>
+            <a [routerLink]="['/']">Home</a>
+            <a [routerLink]="['/quotes/add', author._id]">Add a quote</a>
+        </div>
+
+        <div class="purple">Quotes by {{author.name}}:</div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Quote</th>
+                    <th>Votes</th>
+                    <th>Actions vailable</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let quote of author.quotes">
+                    <td>{{quote.quote}}</td>
+                    <td>{{quote.score}}</td>
+                    <td>
+                        <button (click)="clickVoteUp(quote)">Vote up</button>
+                        <button (click)="clickVoteDown(quote)">Vote down</button>
+                        <button (click)="deleteQuote(quote)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</main>

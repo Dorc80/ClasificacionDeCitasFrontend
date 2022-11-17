@@ -1,0 +1,60 @@
+.quotes-list-page table, .quotes-list-page td, .quotes-list-page th {
+    border: 1px solid black;
+}
+
+.quotes-list-page table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.quotes-list-page thead tr, .quotes-list-page tr:nth-child(even) {
+    background-color: #d3d3d3;
+}
+
+.quotes-list-page thead, .quotes-list-page table button {
+    color: white;
+}
+
+.quotes-list-page table button {
+    background-color: #ada9a2;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.quotes-list-page tbody tr {
+    color: #9f66f8;
+}
+
+.quotes-list-page tbody td {
+    padding: 0.5em 0.5em;
+}
+
+.quotes-list-page table td button:first-child {
+    /* padding: 0.3em 2em; */
+    /* margin-right: 0.5em; */
+}
+
+.quotes-list-page table td button:last-child {
+    margin-right: 0;
+}
+
+.quotes-list-page table td button {
+    width: 6em;
+    margin-right: 0.5em;
+}
+
+.quotes-list-page div > div {
+    margin: 0.3em 0
+}
+
+.quotes-list-page h1 {
+    margin: 0.2em 0;
+}
+
+.quotes-list-page .purple {
+    color: #9f66f8;
+}
+
+.quotes-list-page a {
+    margin-right: 3em;
+}
